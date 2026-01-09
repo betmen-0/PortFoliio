@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family : "Outfit", sans-serif;
+    background-color: #bed0f4;
+    display: grid;
+    background-image: linear-gradient(90deg, #80808035 1px, transparent 1px), linear-gradient(180deg, #80808035 1px , transparent 1px);
+    background-size: 30px 30px;
+    background-position: center;
+    grid-template-columns: [full-width-start] minmax(1rem,1fr) [content-start] minmax(0,calc(100% - 2rem)) [content-end] minmax(1rem,1fr) [full-width-end];
+}
+
+.content {
+    grid-column: content-start / content-end;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem 1.5rem;
+    height: 40px;
+    top: 0;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 #000;
+    border-radius: 30px;
+    position: sticky;
+    background-color: #9fe0ff;
+    z-index: 1000;
+}
+
+.nav-left .logo {
+    height: 120px;
+}
+
+.nav-left .logo img{
+    object-fit: contain;
+    max-height: 100%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
