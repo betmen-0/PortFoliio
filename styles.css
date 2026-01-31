@@ -569,3 +569,83 @@ a:hover {
 .btn-email {
     background-color: #ffeb3b;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    
+    padding: 15px;
+    background-color: #bfd6ec;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links ul li{
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+    margin-right: 5px;
+}
+
+.footer-links a:hover {
+    color: #00aaff; 
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-icons a {
+    color:000;
+    font-size: 24px;
+    margin-left: 0;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #00aaff;
+}
+
+.footer-separator {
+    background-color: #000;
+    border: none;
+    height: 2px;
+    border-radius: 50px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-tag {
+    background-color: #000;
+    color: #ffff;
+    padding: 2px;
+}
